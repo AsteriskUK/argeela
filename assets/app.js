@@ -97,17 +97,35 @@
     });
   }
 
-  /* ---- Contact form (front-end demo) ---- */
+  /* ---- Contact form → Netlify Forms (AJAX submit, keeps toast UX) ---- */
   var form = document.querySelector("#contact-form");
   var toast = document.querySelector("#toast");
+  function showToast(msg, ok) {
+    if (!toast) return;
+    if (msg) toast.lastChild.textContent = " " + msg;
+    toast.style.background = ok === false ? "#b23a2f" : "";
+    toast.classList.add("show");
+    setTimeout(function () { toast.classList.remove("show"); }, 4600);
+  }
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      if (toast) {
-        toast.classList.add("show");
-        setTimeout(function () { toast.classList.remove("show"); }, 4200);
-      }
-      form.reset();
+      var btn = form.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = true; btn._html = btn.innerHTML; btn.textContent = "Sending…"; btn.style.opacity = ".7"; }
+      var body = new URLSearchParams(new FormData(form)).toString();
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: body
+      }).then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        showToast("Thanks — your enquiry's in. We'll reply the same working day.", true);
+        form.reset();
+      }).catch(function () {
+        showToast("Sorry, that didn't send. Please call 07985 322849 or email us.", false);
+      }).then(function () {
+        if (btn) { btn.disabled = false; btn.style.opacity = ""; if (btn._html) btn.innerHTML = btn._html; }
+      });
     });
   }
 

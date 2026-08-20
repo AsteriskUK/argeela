@@ -81,7 +81,9 @@
         <span class="eyebrow">Trade enquiry</span>
         <h2 style="font-size:clamp(1.6rem,3vw,2.1rem);margin:14px 0 6px">Request a quote or account</h2>
         <p style="color:var(--muted);margin-bottom:28px">We reply the same working day. No obligation.</p>
-        <form id="contact-form" novalidate>
+        <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+          <input type="hidden" name="form-name" value="contact">
+          <p style="display:none"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
           <div class="field-row">
             <div class="field">
               <label for="name">Your name</label>
@@ -200,6 +202,6 @@
   Thanks — your enquiry's in. We'll reply the same working day.
 </div>
 
-<script src="assets/app.js?v=3"></script>
+<script src="assets/app.js?v=4"></script>
 </body>
 </html>
