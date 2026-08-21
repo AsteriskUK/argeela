@@ -8,8 +8,8 @@
 <meta name="description" content="Argeela London Ltd — wholesale hardware, plumbing & heating equipment and flooring supplies for the London trade. Trade counter, next-day delivery and dedicated account management.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=4">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css?v=6">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2312151b'/><path d='M50 22 78 74 62 74 50 50 38 74 22 74Z' fill='%23e07a1f'/></svg>">
 </head>
 <body>
@@ -67,7 +67,7 @@
   <a href="index.html#divisions">Divisions</a>
   <a href="index.html#trade">Trade Account</a>
   <a href="contact.html">Contact</a>
-  <div class="mn-foot">07985 322849 · trade@argeelalondonltd.co.uk</div>
+  <div class="mn-foot">07985 322849 · info@argeelalondonltd.co.uk</div>
 </div>
 
 <!-- ============ HERO ============ -->
@@ -78,9 +78,13 @@
   <div class="wrap">
     <div class="hero-inner">
       <div class="hero-copy">
-        <span class="hero-badge" data-reveal><span class="pill">TRADE</span> Hardware · Plumbing · Heating · Flooring</span>
+        <div class="hero-index" data-reveal>
+          <a href="products.html#building"><b>01</b> Building · Plumbing · Heating</a>
+          <a href="products.html#flooring"><b>02</b> Carpets · Floor Coverings</a>
+        </div>
+        <span class="hero-badge" data-reveal><span class="pill">TRADE</span> One account · everything the job needs</span>
         <h1 data-reveal data-reveal-delay="1">
-          The merchant<br>that keeps<br>London <em>building.</em>
+          The merchant<br>that keeps London<br><span class="mark">building.</span>
         </h1>
         <p class="hero-lead" data-reveal data-reveal-delay="2">
           One trade partner for wholesale hardware, plumbing &amp; heating equipment and the finest floor coverings — held in stock, priced for the trade, on site tomorrow.
@@ -144,7 +148,7 @@
 <!-- ============ DIVISIONS ============ -->
 <section class="section divisions" id="divisions">
   <div class="wrap">
-    <div class="section-head" data-reveal>
+    <div class="section-head" data-no="01" data-reveal>
       <span class="eyebrow">Two divisions, one delivery</span>
       <h2>Everything the job needs, under one account.</h2>
       <p>From first fix to final finish. Argeela London supplies the structural, mechanical and decorative trades from a single London operation.</p>
@@ -152,7 +156,7 @@
     <div class="div-grid">
       <a class="division build" href="products.html#building" data-reveal>
         <span class="d-watermark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M6 21V8l6-4 6 4v13M10 21v-5h4v5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        <span class="d-num">DIVISION 01</span>
+        <span class="d-num">01</span>
         <h3>Building, Plumbing<br>&amp; Heating</h3>
         <p>Wholesale hardware, fixings, pipe &amp; fittings, boilers, radiators, valves and full central-heating kit — trade-priced and stocked deep.</p>
         <div class="d-tags"><span>Hardware &amp; Fixings</span><span>Copper &amp; Plastic Pipe</span><span>Boilers &amp; Rads</span><span>Valves &amp; Controls</span></div>
@@ -161,7 +165,7 @@
       </a>
       <a class="division floor" href="products.html#flooring" data-reveal data-reveal-delay="1">
         <span class="d-watermark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h18M3 16h18M8 3v18M16 3v18" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        <span class="d-num">DIVISION 02</span>
+        <span class="d-num">02</span>
         <h3>Carpets, Rugs<br>&amp; Floor Coverings</h3>
         <p>Retail and contract flooring — wool twists, LVT, laminate, engineered wood, rugs and wall coverings, cut and supplied to spec.</p>
         <div class="d-tags"><span>Carpet &amp; Underlay</span><span>LVT &amp; Vinyl</span><span>Engineered Wood</span><span>Rugs &amp; Runners</span></div>
@@ -176,7 +180,7 @@
 <section class="section cats">
   <div class="wrap">
     <div class="cat-top">
-      <div class="section-head" style="margin-bottom:0" data-reveal>
+      <div class="section-head" data-no="02" style="margin-bottom:0" data-reveal>
         <span class="eyebrow">Browse by category</span>
         <h2>Eight aisles, thousands of lines.</h2>
       </div>
@@ -246,7 +250,7 @@
   <div class="wrap">
     <div class="value-grid">
       <div>
-        <div class="section-head" style="margin-bottom:0" data-reveal>
+        <div class="section-head" data-no="03" style="margin-bottom:0" data-reveal>
           <span class="eyebrow">Why the trade chooses us</span>
           <h2>Built around how contractors actually work.</h2>
           <p>No waiting on hold, no split deliveries, no surprises. Just deep stock, straight pricing and a team that knows the difference between 15mm and 22mm.</p>
@@ -292,7 +296,7 @@
 <!-- ============ MATERIAL SWATCHES ============ -->
 <section class="section swatches">
   <div class="wrap">
-    <div class="section-head" data-reveal>
+    <div class="section-head" data-no="04" data-reveal>
       <span class="eyebrow">Division 02 · Flooring &amp; interiors</span>
       <h2>Feel the floor before it's fitted.</h2>
       <p>A snapshot of the ranges on the floor — from deep wool twists to warm engineered oak and hard-wearing LVT. Samples available at the counter.</p>
@@ -341,7 +345,7 @@
 <!-- ============ PROCESS ============ -->
 <section class="section process">
   <div class="wrap">
-    <div class="section-head" data-reveal>
+    <div class="section-head" data-no="05" data-reveal>
       <span class="eyebrow">How it works</span>
       <h2>From enquiry to on-site in four steps.</h2>
     </div>
@@ -374,7 +378,7 @@
 <section class="section testi">
   <div class="hero-glow" style="opacity:.5"></div>
   <div class="wrap">
-    <div class="section-head" data-reveal>
+    <div class="section-head dark-head" data-no="06" data-reveal>
       <span class="eyebrow" style="color:var(--amber-2)">On the tools</span>
       <h2 style="color:#fff">Trusted by London's trades.</h2>
     </div>
@@ -444,7 +448,7 @@
       <div class="f-contact">
         <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>Trade Counter &amp; Depot, London</span></div>
         <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" stroke-linecap="round" stroke-linejoin="round"/></svg><a href="tel:+447985322849">07985 322849</a></div>
-        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4zM4 7l8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg><a href="mailto:trade@argeelalondonltd.co.uk">trade@argeelalondonltd.co.uk</a></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4zM4 7l8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg><a href="mailto:info@argeelalondonltd.co.uk">info@argeelalondonltd.co.uk</a></div>
       </div>
     </div>
     <div>
@@ -481,6 +485,6 @@
   </div>
 </footer>
 
-<script src="assets/app.js?v=4"></script>
+<script src="assets/app.js?v=5"></script>
 </body>
 </html>
